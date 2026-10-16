@@ -148,3 +148,59 @@ footer{border-top:1px solid var(--line);max-width:var(--max-w);margin:3rem auto 
   .people-grid{grid-template-columns:1fr;}
   .position-list{grid-template-columns:1fr;}
 }
+
+/* ===================== Members 侧边栏 ===================== */
+/* 电脑端：左侧固定侧边栏 + 右侧内容 */
+.members-layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:2.2rem;align-items:start;}
+.members-main .section:first-child{padding-top:0.5rem;}
+
+.side-nav{position:sticky;top:calc(var(--nav-h) + 1.6rem);display:flex;flex-direction:column;gap:0.12rem;padding-right:0.5rem;border-right:1px solid var(--line-soft);}
+.side-nav-head{font-family:var(--serif);font-size:0.95rem;font-weight:600;color:var(--ink);margin-bottom:0.6rem;}
+.side-link{font-size:0.85rem;line-height:1.45;color:var(--ink-soft);text-decoration:none;padding:0.5rem 0.7rem;border-radius:7px;border-left:2px solid transparent;transition:color .18s,background .18s,border-color .18s;}
+.side-link:hover{color:var(--teal-deep);background:var(--highlight);}
+.side-link.active{color:var(--teal-deep);background:var(--highlight);border-left-color:var(--teal);font-weight:600;}
+
+/* 关闭按钮、抽屉开关、遮罩：只在手机端出现 */
+.side-close{display:none;}
+.side-toggle{display:none;}
+.side-backdrop{display:none;}
+
+/* 中等屏幕：侧边栏窄一点，卡片改 3 列 */
+@media (min-width:761px) and (max-width:1100px){
+  .members-layout{grid-template-columns:168px minmax(0,1fr);gap:1.5rem;}
+  .people-grid{grid-template-columns:repeat(3,1fr);}
+}
+
+/* 手机端：侧边栏变成从左滑出的抽屉 */
+@media (max-width:760px){
+  .members-layout{display:block;}
+
+  .side-nav{position:fixed;top:0;left:0;bottom:0;width:260px;max-width:80vw;z-index:200;
+    background:var(--card);border-right:1px solid var(--line);border-radius:0;
+    box-shadow:4px 0 28px rgba(20,26,23,0.16);
+    padding:1.3rem 1rem 1.5rem;overflow-y:auto;
+    transform:translateX(-100%);transition:transform .28s ease;}
+  .side-nav.open{transform:translateX(0);}
+  .side-nav-head{padding-right:2rem;margin-bottom:0.9rem;}
+  .side-link{padding:0.75rem 0.8rem;font-size:0.92rem;}
+
+  .side-close{display:flex;align-items:center;justify-content:center;position:absolute;top:0.9rem;right:0.8rem;
+    width:32px;height:32px;border:none;background:none;color:var(--ink-muted);font-size:1rem;cursor:pointer;border-radius:6px;}
+  .side-close:hover{color:var(--ink);background:var(--line-soft);}
+
+  .side-toggle{display:flex;align-items:center;justify-content:center;position:fixed;left:0;top:50%;
+    transform:translateY(-50%);z-index:150;width:28px;height:64px;
+    background:var(--card);color:var(--teal-deep);font-size:0.85rem;cursor:pointer;
+    border:1px solid var(--line);border-left:none;border-radius:0 10px 10px 0;
+    box-shadow:2px 0 12px rgba(20,26,23,0.1);}
+
+  .side-backdrop{display:block;position:fixed;inset:0;z-index:190;background:rgba(20,26,23,0.42);
+    opacity:0;pointer-events:none;transition:opacity .28s ease;}
+  .side-backdrop.show{opacity:1;pointer-events:auto;}
+
+  body.drawer-open{overflow:hidden;}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .side-nav,.side-backdrop{transition:none;}
+}

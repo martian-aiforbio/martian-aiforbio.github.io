@@ -14,7 +14,7 @@
 
 <nav>
   <div class="nav-inner">
-    <a class="nav-name" href="index.html"><img src="assets/logo.png" alt="Zhang Lab" style="height: 80px; display: block;"></a>
+    <a class="nav-name" href="index.html"><img src="assets/logo.png" alt="Martian Lab" style="height: 80px; display: block;"></a>
     <button class="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
     <div class="nav-right">
       <div class="nav-links">
@@ -30,175 +30,252 @@
 <main>
   <div class="page-header">
     <h1>Members</h1>
-<!--     <p>
-      The people building Zhang Lab, past and present.
-      
-    </p> -->
   </div>
 
-  <section class="section" id="current">
-    <div class="section-head"><h2 class="section-title">Current members</h2></div>
-    <div class="people-grid">
+  <!-- ===== 侧边栏 + 内容：两栏布局 ===== -->
+  <div class="members-layout">
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/mengjizhang.jpg" alt="Mengji Zhang"></div>
-        <div class="person-name">Mengji Zhang, PhD</div>
-        <div class="person-role">Principal Investigator</div>
-<!--         <div class="person-bio">
-          Assistant Professor, Dept. of Biomedical Engineering, SUSTech. PhD from Shanghai Jiao Tong University; postdoctoral fellow at Yale and senior postdoctoral fellow at the Wellcome Sanger Institute, Cambridge, before joining SUSTech full-time in September 2026.
-          
-        </div> -->
-        <div class="person-links">
-          <a href="https://scholar.google.com/citations?hl=zh-CN&user=ZXYNHYoAAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-          <a href="https://github.com/mjDelta" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://mjdelta.github.io" target="_blank" title="Personal homepage"><i class="fas fa-globe"></i></a>
+    <!-- 侧边栏（手机端会变成可滑出的抽屉） -->
+    <aside class="side-nav" id="sideNav" aria-label="Member sections">
+      <button class="side-close" id="sideClose" aria-label="Close menu"><i class="fas fa-xmark"></i></button>
+      <div class="side-nav-head">Current members</div>
+      <a class="side-link" href="#pi">PI</a>
+      <a class="side-link" href="#manager">Lab Manager</a>
+      <a class="side-link" href="#research">Research Assistant &amp; Visiting Researcher</a>
+      <a class="side-link" href="#alumni">Alumni</a>
+    </aside>
+
+    <!-- 右侧内容 -->
+    <div class="members-main">
+
+      <section class="section" id="pi">
+        <div class="section-head"><h2 class="section-title">Principal Investigator</h2></div>
+        <div class="people-grid">
+
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/mengjizhang.jpg" alt="Mengji Zhang"></div>
+            <div class="person-name">Mengji Zhang, PhD</div>
+            <div class="person-role">Principal Investigator</div>
+            <div class="person-links">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=ZXYNHYoAAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+              <a href="https://github.com/mjDelta" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://mjdelta.github.io" target="_blank" title="Personal homepage"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+
         </div>
-      </div>
+      </section>
 
+      <section class="section" id="manager">
+        <div class="section-head"><h2 class="section-title">Lab Manager</h2></div>
+        <div class="people-grid">
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/shilinxu.jpg"></div>
-        <div class="person-name">Shilin Xu, M.S.</div>
-        <div class="person-role">Lab Manager</div>
-        <div class="person-school">The University of Edinburgh</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/shilinxu.jpg" alt="Shilin Xu"></div>
+            <div class="person-name">Shilin Xu, M.S.</div>
+            <div class="person-role">Lab Manager</div>
+            <div class="person-school">The University of Edinburgh</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/haizhouxie.jpg"></div>
-        <div class="person-name">Haizhou Xie, M.S.</div>
-        <div class="person-role">Research Assistant</div>
-        <div class="person-school">South China University Of Technology<br>(华南理工大学)</div>
-      </div>
+        </div>
+      </section>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/minweihe.jpg"></div>
-        <div class="person-name">Minwei He, M.S.</div>
-        <div class="person-role">Research Assistant</div>
-        <div class="person-school">National University of Singapore</div>
-      </div>
+      <section class="section" id="research">
+        <div class="section-head"><h2 class="section-title">Research Assistant &amp; Visiting Researcher</h2></div>
+        <div class="people-grid">
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/qiweiyang.jpg"></div>
-        <div class="person-name">Qiwei Yang, M.S.</div>
-        <div class="person-role">Research Assistant</div>
-        <div class="person-school">City University of Hong Kong</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/haizhouxie.jpg" alt="Haizhou Xie"></div>
+            <div class="person-name">Haizhou Xie, M.S.</div>
+            <div class="person-role">Research Assistant</div>
+            <div class="person-school">South China University Of Technology<br>(华南理工大学)</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/yiyou.jpg"></div>
-        <div class="person-name">Yi You, B.S.</div>
-        <div class="person-role">Research Assistant</div>
-        <div class="person-school">Beijing Forestry University<br>(北京林业大学)</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/minweihe.jpg" alt="Minwei He"></div>
+            <div class="person-name">Minwei He, M.S.</div>
+            <div class="person-role">Research Assistant</div>
+            <div class="person-school">National University of Singapore</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/caiyili.jpg"></div>
-        <div class="person-name">Caiyi Li</div>
-        <div class="person-role">Visiting Master student</div>
-        <div class="person-school">Southern University of Science and Technology<br>(南方科技大学)</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/qiweiyang.jpg" alt="Qiwei Yang"></div>
+            <div class="person-name">Qiwei Yang, M.S.</div>
+            <div class="person-role">Research Assistant</div>
+            <div class="person-school">City University of Hong Kong</div>
+          </div>
 
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/yiyou.jpg" alt="Yi You"></div>
+            <div class="person-name">Yi You, B.S.</div>
+            <div class="person-role">Research Assistant</div>
+            <div class="person-school">Beijing Forestry University<br>(北京林业大学)</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/feimo.jpg"></div>
-        <div class="person-name">Fei Mo</div>
-        <div class="person-role">Visiting Phd student</div>
-        <div class="person-school">Illinois Institute of Techonology</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/caiyili.jpg" alt="Caiyi Li"></div>
+            <div class="person-name">Caiyi Li</div>
+            <div class="person-role">Visiting Master student</div>
+            <div class="person-school">Southern University of Science and Technology<br>(南方科技大学)</div>
+          </div>
 
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/feimo.jpg" alt="Fei Mo"></div>
+            <div class="person-name">Fei Mo</div>
+            <div class="person-role">Visiting Phd student</div>
+            <div class="person-school">Illinois Institute of Techonology</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/hongzhiyao.jpg"></div>
-        <div class="person-name">Hongzhi Yao</div>
-        <div class="person-role">Visiting Bachelor student</div>
-        <div class="person-school">Southern University of Science and Technology<br>(南方科技大学)</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/hongzhiyao.jpg" alt="Hongzhi Yao"></div>
+            <div class="person-name">Hongzhi Yao</div>
+            <div class="person-role">Visiting Bachelor student</div>
+            <div class="person-school">Southern University of Science and Technology<br>(南方科技大学)</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/jielincao.jpg"></div>
-        <div class="person-name">Jielin Cao</div>
-        <div class="person-role">Visiting Master student</div>
-        <div class="person-school">Jinan University<br>(暨南大学)</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/jielincao.jpg" alt="Jielin Cao"></div>
+            <div class="person-name">Jielin Cao</div>
+            <div class="person-role">Visiting Master student</div>
+            <div class="person-school">Jinan University<br>(暨南大学)</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/junyixue.jpg"></div>
-        <div class="person-name">Junyi Xue</div>
-        <div class="person-role">Visiting Master student</div>
-        <div class="person-school">City University of Hong Kong</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/junyixue.jpg" alt="Junyi Xue"></div>
+            <div class="person-name">Junyi Xue</div>
+            <div class="person-role">Visiting Master student</div>
+            <div class="person-school">City University of Hong Kong</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/kesongwu.jpg"></div>
-        <div class="person-name">Kesong Wu</div>
-        <div class="person-role">Visiting Master student</div>
-        <div class="person-school">The university of Queensland</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/kesongwu.jpg" alt="Kesong Wu"></div>
+            <div class="person-name">Kesong Wu</div>
+            <div class="person-role">Visiting Master student</div>
+            <div class="person-school">The university of Queensland</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/meiqidiao.jpg"></div>
-        <div class="person-name">Meiqi Diao</div>
-        <div class="person-role">Visiting Bachelor student</div>
-        <div class="person-school">Shenzhen University<br>(深圳大学)</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/meiqidiao.jpg" alt="Meiqi Diao"></div>
+            <div class="person-name">Meiqi Diao</div>
+            <div class="person-role">Visiting Bachelor student</div>
+            <div class="person-school">Shenzhen University<br>(深圳大学)</div>
+          </div>
 
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/shizhaoxu.jpg" alt="Shizhao Xu"></div>
+            <div class="person-name">Shizhao Xu</div>
+            <div class="person-role">Visiting Bachelor student</div>
+            <div class="person-school">University of Manchester</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/shizhaoxu.jpg"></div>
-        <div class="person-name">Shizhao Xu</div>
-        <div class="person-role">Visiting Bachelor student</div>
-        <div class="person-school">University of Manchester</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/yuanpeizhang.jpg" alt="Yuanpei Zhang"></div>
+            <div class="person-name">Yuanpei Zhang</div>
+            <div class="person-role">Visiting Master student</div>
+            <div class="person-school">Chinese Academy of Agricultural Sciences<br>(中国农业科学院)</div>
+          </div>
 
-       <div class="person-card">
-        <div class="person-photo"><img src="assets/people/yuanpeizhang.jpg"></div>
-        <div class="person-name">Yuanpei Zhang</div>
-        <div class="person-role">Visiting Master student</div>
-        <div class="person-school">Chinese Academy of Agricultural Sciences<br>(中国农业科学院)</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/yuweiwang.jpg" alt="Yuwei Wang"></div>
+            <div class="person-name">Yuwei Wang</div>
+            <div class="person-role">Visiting Bachelor student</div>
+            <div class="person-school">Southern University of Science and Technology<br>(南方科技大学)</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/yuweiwang.jpg"></div>
-        <div class="person-name">Yuwei Wang</div>
-        <div class="person-role">Visiting Bachelor student</div>
-        <div class="person-school">Southern University of Science and Technology<br>(南方科技大学)</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/zeyuxie.jpg" alt="Zeyu Xie"></div>
+            <div class="person-name">Zeyu Xie</div>
+            <div class="person-role">Visiting Master student</div>
+            <div class="person-school">University College of London</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/zeyuxie.jpg"></div>
-        <div class="person-name">Zeyu Xie</div>
-        <div class="person-role">Visiting Master student</div>
-        <div class="person-school">University College of London</div>
-      </div>
+          <div class="person-card">
+            <div class="person-photo"><img src="assets/people/zhihaohuang.jpg" alt="Zhihao Huang"></div>
+            <div class="person-name">Zhihao Huang</div>
+            <div class="person-role">Visiting PhD student</div>
+            <div class="person-school">Southern University of Science and Technology<br>(南方科技大学)</div>
+          </div>
 
-      <div class="person-card">
-        <div class="person-photo"><img src="assets/people/zhihaohuang.jpg"></div>
-        <div class="person-name">Zhihao Huang</div>
-        <div class="person-role">Visiting PhD student</div>
-        <div class="person-school">Southern University of Science and Technology<br>(南方科技大学)</div>
-      </div>
+        </div>
+      </section>
 
-
-
+      <section class="section" id="alumni">
+        <div class="section-head"><h2 class="section-title">Alumni</h2></div>
+        <div class="people-grid">
+          <div class="empty-state" style="grid-column:1/-1;">
+            No alumni yet — the lab was founded in September 2026.
+          </div>
+        </div>
+      </section>
 
     </div>
-  </section>
-
-  <section class="section" id="alumni">
-    <div class="section-head"><h2 class="section-title">Alumni</h2></div>
-    <div class="people-grid">
-<!--       <div class="empty-state" style="grid-column:1/-1;">
-        No alumni yet — the lab was founded in September 2026. This section will grow as members complete their time in the lab.
-        
-      </div> -->
-    </div>
-  </section>
+  </div>
 </main>
+
+<!-- 手机端：抽屉的开关按钮和背景遮罩 -->
+<button class="side-toggle" id="sideToggle" aria-label="Open member menu" aria-expanded="false"><i class="fas fa-chevron-right"></i></button>
+<div class="side-backdrop" id="sideBackdrop"></div>
 
 <footer>
   <p>© 2026 Martian Lab. All rights reserved.</p>
 </footer>
 
 <script src="main.js"></script>
+
+<!-- ===== 侧边栏功能 ===== -->
+<script>
+(function () {
+  var nav = document.getElementById('sideNav');
+  var toggle = document.getElementById('sideToggle');
+  var closeBtn = document.getElementById('sideClose');
+  var backdrop = document.getElementById('sideBackdrop');
+  if (!nav || !toggle) return;
+
+  var links = Array.prototype.slice.call(nav.querySelectorAll('.side-link'));
+
+  function openDrawer() {
+    nav.classList.add('open');
+    backdrop.classList.add('show');
+    document.body.classList.add('drawer-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+  function closeDrawer() {
+    nav.classList.remove('open');
+    backdrop.classList.remove('show');
+    document.body.classList.remove('drawer-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', openDrawer);
+  closeBtn.addEventListener('click', closeDrawer);
+  backdrop.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeDrawer();
+  });
+  // 点了某个分类就自动收回抽屉
+  links.forEach(function (a) { a.addEventListener('click', closeDrawer); });
+
+  // 滚动时高亮当前所在的分类
+  var items = [];
+  links.forEach(function (a) {
+    var el = document.querySelector(a.getAttribute('href'));
+    if (el) items.push({ link: a, el: el });
+  });
+
+  function highlight() {
+    var current = items[0];
+    items.forEach(function (it) {
+      if (it.el.getBoundingClientRect().top <= 110) current = it;
+    });
+    links.forEach(function (a) { a.classList.remove('active'); });
+    if (current) current.link.classList.add('active');
+  }
+
+  window.addEventListener('scroll', highlight, { passive: true });
+  window.addEventListener('resize', highlight);
+  highlight();
+})();
+</script>
+
 </body>
 </html>
